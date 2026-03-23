@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Game Developer Roadmap</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+<style>
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg,#1f1c2c,#928dab);
+    color:white;
+    text-align:center;
+    padding:40px;
+}
+
+h1{
+    font-weight:bold;
+}
+
+.subtitle{
+    color:#e0e0e0;
+    margin-bottom:40px;
+}
+
+.timeline{
+    position:relative;
+    max-width:600px;
+    margin:auto;
+}
+
+.timeline::before{
+    content:'';
+    position:absolute;
+    left:50%;
+    width:4px;
+    height:100%;
+    background:#ffffff50;
+    transform:translateX(-50%);
+}
+
+.step{
+    position:relative;
+    width:50%;
+    padding:20px;
+}
+
+.step.left{
+    left:0;
+    text-align:right;
+}
+
+.step.right{
+    left:50%;
+}
+
+.card{
+    background:rgba(255,255,255,0.1);
+    backdrop-filter: blur(10px);
+    border-radius:15px;
+    padding:20px;
+    color:white;
+    border:1px solid rgba(255,255,255,0.2);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:scale(1.05);
+    box-shadow:0 0 15px rgba(255,0,255,0.3);
+}
+
+.icon{
+    position:absolute;
+    top:20px;
+    width:40px;
+    height:40px;
+    background:#ff00cc;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border:2px solid white;
+}
+
+.left .icon{
+    right:-20px;
+}
+
+.right .icon{
+    left:-20px;
+}
+
+.btn-back{
+    margin-top:40px;
+}
+
+@media(max-width:768px){
+    .step{
+        width:100%;
+        left:0 !important;
+        text-align:left;
+    }
+
+    .timeline::before{
+        left:10px;
+    }
+
+    .icon{
+        left:-10px !important;
+    }
+}
+
+</style>
+
+</head>
+
+<body>
+
+<h1>🎮 Game Developer Roadmap</h1>
+<p class="subtitle">Create games and bring your ideas to life</p>
+
+<div class="timeline">
+
+    <div class="step left">
+        <div class="icon"><i class="fa-solid fa-code"></i></div>
+        <div class="card">
+            <h5>Programming Basics</h5>
+            <p>Learn C++, C#, or Python fundamentals.</p>
+        </div>
+    </div>
+
+    <div class="step right">
+        <div class="icon"><i class="fa-solid fa-cube"></i></div>
+        <div class="card">
+            <h5>Game Engines</h5>
+            <p>Start with Unity or Unreal Engine.</p>
+        </div>
+    </div>
+
+    <div class="step left">
+        <div class="icon"><i class="fa-solid fa-shapes"></i></div>
+        <div class="card">
+            <h5>Game Design</h5>
+            <p>Learn mechanics, levels, and player experience.</p>
+        </div>
+    </div>
+
+    <div class="step right">
+        <div class="icon"><i class="fa-solid fa-image"></i></div>
+        <div class="card">
+            <h5>Graphics & Animation</h5>
+            <p>Understand 2D/3D models, textures & animation.</p>
+        </div>
+    </div>
+
+    <div class="step left">
+        <div class="icon"><i class="fa-solid fa-brain"></i></div>
+        <div class="card">
+            <h5>Game Logic & AI</h5>
+            <p>Implement physics, AI, and game mechanics.</p>
+        </div>
+    </div>
+
+    <div class="step right">
+        <div class="icon"><i class="fa-solid fa-music"></i></div>
+        <div class="card">
+            <h5>Sound Design</h5>
+            <p>Add music, sound effects & immersion.</p>
+        </div>
+    </div>
+
+    <div class="step left">
+        <div class="icon"><i class="fa-solid fa-bug"></i></div>
+        <div class="card">
+            <h5>Testing & Debugging</h5>
+            <p>Fix bugs and improve performance.</p>
+        </div>
+    </div>
+
+    <div class="step right">
+        <div class="icon"><i class="fa-solid fa-rocket"></i></div>
+        <div class="card">
+            <h5>Publish & Portfolio</h5>
+            <p>Release games and build your portfolio.</p>
+        </div>
+    </div>
+
+</div>
+
+<a href="careers.html" class="btn btn-light btn-back">
+← Back to Careers
+</a>
+
+</body>
+</html>
